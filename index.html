@@ -1,22 +1,53 @@
 <!DOCTYPE html>
-<html lang = 'en'>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
     <title>Visualization</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-    <div class="creator">
-      <p>Pitehr Hurtado create this site &copy;</p>
-    </div>
-    
+        <h1 id="titlePage">Short Path Tree</h1>
+        <div class="menu" id="menu">
+            <div class="buttons">
+                <button class="control button" id = "play">Play</button>
+            </div>
+            <div class="buttons">
+                <button class="control button" id = "clear">Clear</button>
+            </div>
+            <div class="buttons">
+              <button class="control button" id = "reset">Reset</button>
+            </div>
+            <div class="buttons">
+                <button class="control button" id = "tutorial">Tutorial</button>
+                <div class="modal-container" id="modal-container">
+                    <div class="modal">
+                        <h1>Tutorial for path visualizator on grids!</h1>
+                        <p>Start Node: </p><div style="background-color:red;width:20px;height:20px;border:1px solid black;"></div>
+                        <p>End Node: </p><div style="background-color:green;width:20px;height:20px;border:1px solid black;"></div>
+                        <p>Step Node: </p><div style="background-color:black;width:20px;height:20px;border:1px solid black;"></div>
+                        <button id="close">
+                            Close Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="creator">
+            <p>Pitehr Hurtado create this site &copy;</p>
+          </div> 
     </header>
     <main>
-      <div class=""myCanvas">
-        <canvas></canvas>
-      </div>
+        <div class="myCanvas">
+            <canvas></canvas>
+        </div>
     </main>
     <footer></footer>
-    <script type="module" src = "./js/index.js"></script>
-  </body> 
+    <script type="module" src="./js/index.js"></script>
+</body>
 </html>
